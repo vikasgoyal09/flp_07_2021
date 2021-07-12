@@ -5,4 +5,6 @@ urlpatterns = [
     path('login/', auth_views.LoginView.as_view(), name='login'),
     path('', include("django.contrib.auth.urls")),
     path('base/', views.base_view)
+    path('signup/', views.signup, name='signup')
 ]
+

@@ -7,7 +7,7 @@ from django.db.models.deletion import CASCADE
 class GameBoard(models.Model):
     max_players = models.IntegerField()
     no_of_players = models.IntegerField(default=0)
-    bank_amount = models.IntegerField(default=0)
+    bank_amount = models.IntegerField(default=5000)
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
     cell_conf = models.CharField(max_length=255)

@@ -1,11 +1,10 @@
 {%extends 'user/base.html'%}
-{%block title%}New Games List{%endblock%}
+{%block title%}Enrolled and Played Games List{%endblock%}
 {% load crispy_forms_tags %}
 
 {%block body %}
-{{message}}
 <div class="row">
-{% for i in newgameslist %}
+{% for i in enrolledgames %}
 <div class="card col-md-2 m-2" style="width: 28rem">
     <div class="card-body">
         <ul class="list-group">
@@ -14,7 +13,7 @@
         <li class="list-group-item">End Tme: {{i.end_time}}</li>
         <li class="list-group-item">Max Players Allowed: {{i.max_players}}</li>
         </ul>
-        <a href="/game/newgames/{{i.id}}" class="btn btn-primary mt-2">Enroll</a>
+        <a href="/user/home/" class="btn btn-primary mt-2">Start Game</a>
     </div>
 </div>
 {%endfor%}

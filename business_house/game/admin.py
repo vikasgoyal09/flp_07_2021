@@ -43,7 +43,7 @@ class GameBoardAdminForm(forms.ModelForm, admin.ModelAdmin):
 
 @admin.register(models.GameBoard)
 class GameBoardAdmin(admin.ModelAdmin):
-    readonly_fields = ('no_of_players',)
+    #readonly_fields = ('no_of_players',)
     form = GameBoardAdminForm
 
 

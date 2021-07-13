@@ -1,10 +1,15 @@
 from rest_framework import serializers
+from . import models
 
 
-class GameBoardSerializer(serializers.Serializer):
-    max_players = serializers.IntegerField()
-    no_of_players = serializers.IntegerField(default=0)
-    bank_amount = serializers.IntegerField(default=5000)
-    start_time = serializers.DateTimeField()
-    end_time = serializers.DateTimeField()
-    cell_conf = serializers.CharField(max_length=255)
+class GameBoardSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.GameBoard
+        fields = ['id', 'max_players', 'no_of_players', 'bank_amount', 'start_time', 'end_time', 'cell_conf']
+
+
+
+class GamePlayerSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = models.GamePlayer
+        fields = ['game_id', 'user_id', 'scored_credit']

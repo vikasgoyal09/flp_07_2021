@@ -19,6 +19,8 @@ class GamePlayer(models.Model):
     game_id = models.ForeignKey(GameBoard, on_delete=CASCADE)
     user_id = models.ForeignKey(User, on_delete=CASCADE)
     scored_credit = models.IntegerField(default=0)
+    class Meta:
+        unique_together=('game_id','user_id',)
 
     def __str__(self):
         return "game_id: {} - user_id: {}".format(self.game_id, self.user_id)

@@ -4,7 +4,7 @@ from . import models
 
 class GameBoardSerializer(serializers.ModelSerializer):
     class Meta:
-        model = models.GameBoard
+        model = models.GameBoardModel
         fields = ['id', 'max_players', 'no_of_players', 'bank_amount', 'start_time', 'end_time', 'cell_conf']
 
 

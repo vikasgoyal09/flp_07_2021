@@ -10,7 +10,7 @@ now = timezone.now()
 class GameBoardAdminForm(forms.ModelForm, admin.ModelAdmin):
 
     class Meta:
-        model = models.GameBoard
+        model = models.GameBoardModel
         fields = "__all__"
 
     def clean_start_time(self):
@@ -41,7 +41,7 @@ class GameBoardAdminForm(forms.ModelForm, admin.ModelAdmin):
     
 
 
-@admin.register(models.GameBoard)
+@admin.register(models.GameBoardModel)
 class GameBoardAdmin(admin.ModelAdmin):
     #readonly_fields = ('no_of_players',)
     form = GameBoardAdminForm

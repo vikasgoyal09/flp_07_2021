@@ -1,5 +1,6 @@
 django== 3.2.5
 djangorestframework
 psycopg2-binary==2.8.6
+django-background-tasks==1.2.5
 django-environ
 django-crispy-forms

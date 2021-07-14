@@ -16,7 +16,7 @@ def fetch_enrolled_games(request):
     serializers = serializer.GamePlayerSerializer(gameplayer, many=True)
     for i in serializers.data:
         gameboardlist.append(i['game_id'])
-    gameboard = models.GameBoard.objects.filter(
+    gameboard = models.GameBoardModel.objects.filter(
         id__in=gameboardlist).order_by('-start_time')
     gameboard_serializer = serializer.GameBoardSerializer(gameboard, many=True)
     content = gameboard_serializer.data

@@ -1,4 +1,5 @@
 from django.shortcuts import redirect, render
+from django.conf import settings
 from . import models
 from django.db import IntegrityError
 from . import serializer
@@ -9,6 +10,9 @@ from .apis.fetch_enrolled_games_api import fetch_enrolled_games
 from .apis.fetch_new_games_api import fetch_new_games
 
 import random
+
+from .scheduler import GameRunner
+
 now = timezone.now()
 
 
@@ -31,10 +35,10 @@ def enrolled_game(request):
 @login_required(login_url='/user/login/')
 def enrolling(request, game_id):
     try:
-        gameboard = models.GameBoard.objects.get(id=game_id)
-        if gameboard.no_of_players<gameboard.max_players:
+        gameboard = models.GameBoardModel.objects.get(id=game_id)
+        if gameboard.no_of_players < gameboard.max_players:
             user = User.objects.get(username=request.user.username)
-            gameboard.no_of_players+=1
+            gameboard.no_of_players += 1
             gameplayer = models.GamePlayer(user_id=user, game_id=gameboard)
             gameplayer.save()
             gameboard.save()
@@ -42,7 +46,8 @@ def enrolling(request, game_id):
         else:
             return render(request, 'game/new_games.html', {"message": "sorry max players reached"})
     except IntegrityError as ie:
-        return render(request, 'game/new_games.html', {"message": "you are already enrolled in this game"})
+        return render(request, 'game/new_games.html',
+                      {"message": "you are already enrolled in this game"})
 
 
 @login_required(login_url='/user/login/')
@@ -54,29 +59,26 @@ def playing_view(request, game_id):
 
     for i in gameplayer_serializer.data:
         players.append(i['user_id'])
-    
+
     if user.id in players:
         print('player can play this game he is registered')
     else:
         print('user cant play this game coz he aint register')
         return redirect('/user/home/')
 
-    return render(request, 'game/in_game_view.html', {'gameid': game_id, 'active_players': gameplayer_serializer.data})
+    return render(request, 'game/in_game_view.html',
+                  {'gameid': game_id, 'active_players': gameplayer_serializer.data})
 
-
-# class Runner:
-#     def __init__(self,cells,player_count):
-#         cells = cells
-#         player_count = player_count
-#         board = GameBoard(cells, player_count, 5000, )
-
-#     def go(self, player, dice):
-#         self.board.move_player(player, dice)
 
 @login_required(login_url='/user/login/')
 def roll_dice(request, game_id):
-    user = User.objects.get(username=request.user.username)
-    user_id = user.id
-    dice = random.randInt(1,6)
-    print("i am rolling dice",dice)
-    return redirect(f'/game/playing/{game_id}')
+    game_runner: GameRunner = settings.LIVE_GAME.get(game_id)
+    if game_runner:
+        dice_output = random.randInt(1, 6)
+        if game_runner.is_allowed_payer(request.user):
+            game_runner.roll_dice(request.user, dice_output)
+            return redirect(f'/game/playing/{game_id}')
+        else:
+            raise Exception('No live game available with provide game id')
+    else:
+        raise Exception('No live game available with provide game id')

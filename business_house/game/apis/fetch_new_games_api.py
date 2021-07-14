@@ -18,7 +18,7 @@ def fetch_new_games(request):
     gameboardlist = []
     for i in serializers_game_player.data:
         gameboardlist.append(i['game_id'])
-    gameboard = models.GameBoard.objects.filter(start_time__gt=now, no_of_players__lt=F(
+    gameboard = models.GameBoardModel.objects.filter(start_time__gt=now, no_of_players__lt=F(
         'max_players')).exclude(id__in=gameboardlist).order_by('start_time')
     serializers = serializer.GameBoardSerializer(gameboard, many=True)
     content = serializers.data

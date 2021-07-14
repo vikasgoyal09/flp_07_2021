@@ -144,3 +144,4 @@ LOGIN_REDIRECT_URL = "/user/home"
 
 LOGOUT_REDIRECT_URL = "/user/home"
 
+LIVE_GAME = {}

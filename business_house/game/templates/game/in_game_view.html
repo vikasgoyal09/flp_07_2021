@@ -1,0 +1,18 @@
+{%extends 'user/base.html'%}
+{%block title%}New Games List{%endblock%}
+{% load crispy_forms_tags %}
+
+{%block body %}
+{{message}}
+<ul>
+{% for i in active_players %}
+    <li>
+    <p>{{i.user_id}}</p>
+    </li>
+{%endfor%}
+</ul>
+
+    <p>You are in game no. {{gameid}}</p>
+ <a class="btn btn-primary" href="/game/rolldice/{{gameid}}">Roll Dice</a>
+
+{%endblock%}

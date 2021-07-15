@@ -10,6 +10,11 @@
     <p>{{i.user_id}}</p>
     </li>
 {%endfor%}
+{% for i in player_scores %}
+    <li>
+    <p>{{i}}</p>
+    </li>
+{%endfor%}
 </ul>
 
     <p>You are in game no. {{gameid}}</p>

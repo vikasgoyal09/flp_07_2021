@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.db.models.deletion import CASCADE
 
-from business_house.common.choices import ChoiceEnum
+from .common.choices import ChoiceEnum
 
 
 class StatusChoice(ChoiceEnum):

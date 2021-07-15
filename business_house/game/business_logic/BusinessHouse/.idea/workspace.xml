@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c66e27a0-737f-4fc2-a175-fecbe9bc0555" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hAVlHAT5vlqXKODxCFlamEqCfN" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.runner">
+    <configuration name="runner" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="BusinessHouse" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../Env/BusinessHouse/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/runner.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in tests" type="tests" factoryName="Unittests" nameIsGenerated="true">
+      <module name="BusinessHouse" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="$PROJECT_DIR$/../../Env/BusinessHouse/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
+      <option name="_new_pattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.runner" />
+      <item itemvalue="Python tests.Unittests in tests" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c66e27a0-737f-4fc2-a175-fecbe9bc0555" name="Default Changelist" comment="" />
+      <created>1599454032564</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599454032564</updated>
+      <workItem from="1599454043227" duration="11818000" />
+      <workItem from="1625129448450" duration="10049000" />
+      <workItem from="1625292887876" duration="30000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="392" y="223" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625214870116">
+      <screen x="52" y="25" width="1740" height="1095" />
+    </state>
+    <state x="392" y="223" key="#com.intellij.execution.impl.EditConfigurationsDialog/52.25.1740.1095@52.25.1740.1095" timestamp="1625214870116" />
+    <state width="1687" height="322" key="GridCell.Tab.0.bottom" timestamp="1625217104031">
+      <screen x="52" y="25" width="1740" height="1095" />
+    </state>
+    <state width="1687" height="322" key="GridCell.Tab.0.bottom/52.25.1740.1095@52.25.1740.1095" timestamp="1625217104031" />
+    <state width="1687" height="322" key="GridCell.Tab.0.center" timestamp="1625217104030">
+      <screen x="52" y="25" width="1740" height="1095" />
+    </state>
+    <state width="1687" height="322" key="GridCell.Tab.0.center/52.25.1740.1095@52.25.1740.1095" timestamp="1625217104030" />
+    <state width="1687" height="322" key="GridCell.Tab.0.left" timestamp="1625217104030">
+      <screen x="52" y="25" width="1740" height="1095" />
+    </state>
+    <state width="1687" height="322" key="GridCell.Tab.0.left/52.25.1740.1095@52.25.1740.1095" timestamp="1625217104030" />
+    <state width="1687" height="322" key="GridCell.Tab.0.right" timestamp="1625217104031">
+      <screen x="52" y="25" width="1740" height="1095" />
+    </state>
+    <state width="1687" height="322" key="GridCell.Tab.0.right/52.25.1740.1095@52.25.1740.1095" timestamp="1625217104031" />
+    <state width="1687" height="355" key="GridCell.Tab.1.bottom" timestamp="1625214923673">
+      <screen x="52" y="25" width="1740" height="1095" />
+    </state>
+    <state width="1687" height="355" key="GridCell.Tab.1.bottom/52.25.1740.1095@52.25.1740.1095" timestamp="1625214923673" />
+    <state width="1687" height="355" key="GridCell.Tab.1.center" timestamp="1625214923672">
+      <screen x="52" y="25" width="1740" height="1095" />
+    </state>
+    <state width="1687" height="355" key="GridCell.Tab.1.center/52.25.1740.1095@52.25.1740.1095" timestamp="1625214923672" />
+    <state width="1687" height="355" key="GridCell.Tab.1.left" timestamp="1625214923672">
+      <screen x="52" y="25" width="1740" height="1095" />
+    </state>
+    <state width="1687" height="355" key="GridCell.Tab.1.left/52.25.1740.1095@52.25.1740.1095" timestamp="1625214923672" />
+    <state width="1687" height="355" key="GridCell.Tab.1.right" timestamp="1625214923672">
+      <screen x="52" y="25" width="1740" height="1095" />
+    </state>
+    <state width="1687" height="355" key="GridCell.Tab.1.right/52.25.1740.1095@52.25.1740.1095" timestamp="1625214923672" />
+    <state x="776" y="365" key="refactoring.ChangeSignatureDialog" timestamp="1625136590164">
+      <screen x="52" y="25" width="1740" height="1095" />
+    </state>
+    <state x="776" y="365" key="refactoring.ChangeSignatureDialog/52.25.1740.1095@52.25.1740.1095" timestamp="1625136590164" />
+  </component>
+</project>

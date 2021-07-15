@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'crispy_forms',
     'background_task',
     'game',
-    'user',
 ]
 
 MIDDLEWARE = [
